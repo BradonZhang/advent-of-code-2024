@@ -48,7 +48,7 @@ for i in range(len(program) - 1, -1, -1):
     expect = program[i:]
     # print(expect)
     a = 0
-    while run(a2 := a_ * 8 + a) != expect:
+    while run(a2 := (a_ << 3) + a) != expect:
         a += 1
     # print(a, a_)
     a_ = a2
